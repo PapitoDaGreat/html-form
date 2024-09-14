@@ -12,7 +12,7 @@
         }
 
         body {
-            background-color: #f8f7ff;
+            background-color: #e29e9e;
             height: 100%;
             padding-block: 5%;
             
@@ -20,16 +20,16 @@
 
         main {
             margin: auto;
-            height: 30rem;
+            height: 50rem;
             width: 60%; 
-            background-color: #b8b8ff;
+            background-color: #663131;
             border-radius: 1rem;
             padding-block: 2rem;
         }
 
         h1 {
             text-align: center; 
-            color: #4a34c8; 
+            color: #ffffff; 
             padding-block: 2rem;
             font-size: 2.5rem;
         }
@@ -39,7 +39,7 @@
         }
         
         input[type="radio"]{
-            color: white;
+            color: rgb(255, 255, 255);
         }
 
         .flex-field {
@@ -92,6 +92,92 @@
     </style>
 </head>
 <body>
+
+
+    <main>
+        <h1>Registration</h1>
+        <form action="action.php">
+            <div class="flex-field">
+                <label for="username" class="grid-label">Username</label>
+                <input type="text" name="username" Placeholder="Username" minlength="3" maxlength="10" class="grid-input">
+            </div>
+
+            <div class="flex-field">
+                <label for="Email" class="grid-label">Email</label>
+                <input type="email" name="email" Placeholder="Email" class="grid-input">
+            </div>
+
+            <div class="flex-field">
+                <label for="Password" class="grid-label">Password</label>
+                <input type="password" name="password" id="" Placeholder="Password" class="grid-input">
+            </div>
+
+            <div class="flex-field">
+                <label for="Number" class="grid-label">Number</label>
+                <input type="number" name ="number" id="" Placeholder="Number" class="grid-input">
+            </div>
+
+
+            <input type="hidden" value="" name="" class="grid-input">
+            <div class="flex-field">
+    
+                <label for="address" class="grid-label">Address</label>
+                <textarea name="address id=" rows="3"</textarea></textarea>
+             </div>
+
+            <div class="flex-field">
+                <label for="Date" class="grid-label">Date</label>
+                <input type="date" name="date">
+            </div>
+
+            <div class="flex-field">
+                <label for="Number" class="grid-label">Number</label>
+                <input type="datetime-local" name="datetime-local">
+            </div>
+
+
+            <div class="flex-field">
+                <label for="Number" class="grid-label">Number</label>
+                <input type="checkbox" name="skills" id="" value="Programming"><label for="skills">Programming</label>
+            </div>
+
+            <div class="flex-field">
+                <label for="Number" class="grid-label">Number</label>
+                <input type="checkbox" name="skills" id="" value="Java"><label for="skills">Java</label>
+            </div>
+
+
+            <div class="flex-field">
+                <label for="Number" class="grid-label">Number</label>
+                <input type="checkbox" name="skills" id="" value="Web"><label for="skills">Web</label>
+            </div>
+              
+            <div class="flex-field">
+                <label for="Number" class="grid-label">Number</label>
+                <input type="file" name="file-upload" id="">
+            </div>
+
+            <select name="year-level" id="">
+            <option value="" disabled selected>Select year level</option>
+            <optgroup label="College"></optgroup>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+        </optgroup>
+
+            </select>
+
+            <div>
+                <input type="submit" value="Submit" class="form-button">
+                <input type="reset" value="reset" class="form-button">
+            </div>
+
+
+
+        </form>
+    </main>
+
     
 </body>
 </html> 
